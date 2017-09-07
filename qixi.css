@@ -1,0 +1,499 @@
+body{
+	background-color: #eee;
+}
+*,img,ul,li,div{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+img{border:none;outline: none;}
+#screem{
+	width: 100%;
+	height: 100%;    
+	/*left: 20%;
+	top: 20%;*/
+	/*margin: 20% 20%;*/
+	overflow: hidden;
+	position:absolute;
+	border:1px solid green;
+}
+#screem ul{
+	position: relative;
+}
+#screem li{
+	float: left;
+	position: relative;
+	/*overflow: hidden;*/
+}
+#boy,#girl{
+	overflow: hidden;
+	position: absolute;
+	/*border:1px solid red;*/
+	z-index: 2;
+}
+#girl img{
+	position: relative;
+}
+.water1,.water2,.water3,.water4{
+	position: absolute;
+	/*border:1px solid red;*/
+}
+.boywalk{
+	transition:left 15s linear 0s;
+	-webkit-transition:left 15s linear 0s;
+	-moz-transition:left 15s linear 0s;
+	-ms-transition:left 15s linear 0s;
+	-o-transition:left 15s linear 0s;
+}
+#boy img{
+	position: relative;
+	animation:boyLf 0.9s linear 0s infinite normal paused;
+	animation-timing-function:steps(1,start);
+
+	-webkit-animation:boyLf 0.9s linear 0s infinite normal paused;
+	-webkit-animation-timing-function:steps(1,start);
+	-moz-animation:boyLf 0.9s linear 0s infinite normal paused;
+	-moz-animation-timing-function:steps(1,start);
+	-ms-animation:boyLf 0.9s linear 0s infinite normal paused;
+	-ms-animation-timing-function:steps(1,start);
+	-o-animation:boyLf 0.9s linear 0s infinite normal paused;
+	-o-animation-timing-function:steps(1,start);
+}
+
+@keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+@-webkit-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+@-moz-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+@-ms-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+@-o-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+
+.cloud1,.cloud2,.sun,
+.door1,.door2{
+	position:absolute;
+	z-index:1;
+	overflow: hidden;
+	/*border:1px solid red;*/
+}
+.door1 img,.door2 img{
+	position:relative;
+}
+.bird{position:absolute;
+	/*z-index:1;*/
+	/*border:1px solid red;*/
+	overflow: hidden;
+}
+.bird img{
+	position: relative;
+	animation:birdLf 0.4s linear 0s infinite normal running;
+	animation-timing-function:steps(1,start);
+
+	-webkit-animation:birdLf 0.4s linear 0s infinite normal running;
+	-webkit-animation-timing-function:steps(1,start);
+	-moz-animation:birdLf 0.4s linear 0s infinite normal running;
+	-moz-animation-timing-function:steps(1,start);
+	-ms-animation:birdLf 0.4s linear 0s infinite normal running;
+	-ms-animation-timing-function:steps(1,start);
+	-o-animation:birdLf 0.4s linear 0s infinite normal running;
+	-o-animation-timing-function:steps(1,start);
+}
+@keyframes birdLf{
+	0%{left:0%;}
+	36%{left:0%;}
+	72%{left:-100%;}
+	100%{left:-200%;}
+}
+@-webkit-keyframes birdLf{
+	0%{left:0%;}
+	36%{left:0%;}
+	72%{left:-100%;}
+	100%{left:-200%;}
+}
+@-moz-keyframes birdLf{
+	0%{left:0%;}
+	36%{left:0%;}
+	72%{left:-100%;}
+	100%{left:-200%;}
+}
+@-ms-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+@-o-keyframes boyLf{
+	0%{left:0%;}
+	25%{left:0%;}
+	50%{left:-100%;}
+	75%{left:-200%;}
+	100%{left:-300%;}
+}
+
+.water3 img{
+	position: relative;
+	animation: water 12s ease-out 2s infinite alternate running;
+	-webkit-animation: water 12s ease-in-out 2s infinite alternate running;
+	-moz-animation: water 12s ease-in-out 2s infinite alternate running;
+	-ms-animation: water 12s ease-in-out 2s infinite alternate running;
+	-o-animation: water 12s ease-in-out 2s infinite alternate running;
+}
+.water1 img{
+	position: relative;
+	animation: water 7s ease-out 0s infinite alternate running;
+	-webkit-animation: water 7s ease-in-out 0s infinite alternate running;
+	-moz-animation: water 7s ease-in-out 0s infinite alternate running;
+	-ms-animation: water 7s ease-in-out 0s infinite alternate running;
+	-o-animation: water 7s ease-in-out 0s infinite alternate running;
+}
+.water4 img{
+	position: relative;
+	animation: water 10s ease-out 6s infinite alternate running;
+	-webkit-animation: water 10s ease-in-out 6s infinite alternate running;
+	-moz-animation: water 10s ease-in-out 6s infinite alternate running;
+	-ms-animation: water 10s ease-in-out 6s infinite alternate running;
+	-o-animation: water 10s ease-in-out 6s infinite alternate running;
+}
+.water2 img{
+	position: relative;
+	animation: water 18s ease-out 4s infinite alternate running;
+	-webkit-animation: water 18s ease-in-out 4s infinite alternate running;
+	-moz-animation: water 18s ease-in-out 4s infinite alternate running;
+	-ms-animation: water 18s ease-in-out 4s infinite alternate running;
+	-o-animation: water 18s ease-in-out 4s infinite alternate running;
+}
+@keyframes water {
+	0%{left:0%;}
+	100%{left:32%;}
+}
+@-webkit-keyframes water {
+	0%{left:0%;}
+	100%{left:32%;}
+}
+@-moz-keyframes water {
+	0%{left:0%;}
+	100%{left:32%;}
+}
+@-ms-keyframes water {
+	0%{left:0%;}
+	100%{left:32%;}
+}
+@-o-keyframes water {
+	0%{left:0%;}
+	100%{left:32%;}
+}
+/*星星*/
+.star1,.star2,.star3,.star4,.star5,.star6{
+	position: absolute;
+	/*border:1px solid red;*/
+	z-index: 1;
+}
+.star1{
+	animation: star 3.5s ease-out 0s infinite alternate running;
+	-webkit-animation: star 3.5s ease-out 0s infinite alternate running;
+	-moz-animation: star 3.5s ease-out 0s infinite alternate running;
+	-ms-animation: star 3.5s ease-out 0s infinite alternate running;
+	-o-animation: star 3.5s ease-out 0s infinite alternate running;
+}
+.star2{
+	animation: star 2.5s ease-out 1s infinite alternate running;
+	-webkit-animation: star 2.5s ease-out 1s infinite alternate running;
+	-moz-animation: star 2.5s ease-out 1s infinite alternate running;
+	-ms-animation: star 2.5s ease-out 1s infinite alternate running;
+	-o-animation: star 2.5s ease-out 1s infinite alternate running;
+}
+.star3{
+	animation: star 4.3s ease-out 0.5s infinite alternate running;
+	-webkit-animation: star 4.3s ease-out 0.5s infinite alternate running;
+	-moz-animation: star 4.3s ease-out 0.5s infinite alternate running;
+	-ms-animation: star 4.3s ease-out 0.5s infinite alternate running;
+	-o-animation: star 4.3s ease-out 0.5s infinite alternate running;
+}
+.star4{
+	animation: star 2.6s ease-out 3s infinite alternate running;
+	-webkit-animation: star 2.6s ease-out 3s infinite alternate running;
+	-moz-animation: star 2.6s ease-out 3s infinite alternate running;
+	-ms-animation: star 2.6s ease-out 3s infinite alternate running;
+	-o-animation: star 2.6s ease-out 3s infinite alternate running;
+}
+.star5{
+	animation: star 5s ease-out 0s infinite alternate running;
+	-webkit-animation: star 5s ease-out 0s infinite alternate running;
+	-moz-animation: star 5s ease-out 0s infinite alternate running;
+	-ms-animation: star 5s ease-out 0s infinite alternate running;
+	-o-animation: star 5s ease-out 0s infinite alternate running;
+}
+.star6{
+	animation: star 3s ease-out 0.5s infinite alternate running;
+	-webkit-animation: star 3s ease-out 0.5s infinite alternate running;
+	-moz-animation: star 3s ease-out 0.5s infinite alternate running;
+	-ms-animation: star 3s ease-out 0.5s infinite alternate running;
+	-o-animation: star 3s ease-out 0.5s infinite alternate running;
+}
+@keyframes star {
+	0%{opacity:0.1;}
+	50%{opacity:0.6;}
+	100%{opacity:1;}
+}
+@-webkit-keyframes star {
+	0%{opacity:0.1;}
+	50%{opacity:0.6;}
+	100%{opacity:1;}
+}
+@-moz-keyframes star {
+	0%{opacity:0.1;}
+	50%{opacity:0.6;}
+	100%{opacity:1;}
+}
+@-ms-keyframes star {
+	0%{opacity:0.1;}
+	50%{opacity:0.6;}
+	100%{opacity:1;}
+}
+@-o-keyframes star {
+	0%{opacity:0.1;}
+	50%{opacity:0.6;}
+	100%{opacity:1;}
+}
+
+.boyTurn{
+	animation: bTurn 0.6s linear running forwards;
+	animation-timing-function: steps(1,start);
+	-webkit-animation: bTurn 0.6s linear running forwards;
+	-webkit-animation-timing-function: steps(1,start);
+	-moz-animation: bTurn 0.6s linear running forwards;
+	-moz-animation-timing-function: steps(1,start);
+	-ms-animation: bTurn 0.6s linear running forwards;
+	-ms-animation-timing-function: steps(1,start);
+	-o-animation: bTurn 0.6s linear running forwards;
+	-o-animation-timing-function: steps(1,start);
+}
+
+@keyframes bTurn{
+	0%{left:50%;top:50%;}
+	25%{left:300%;top:0%;}
+	50%{left:-310%;top:-100%;}
+	75%{left:-215%;top:-100%;}
+	100%{left:-120%;top:-100%;}
+}
+@-webkit-keyframes bTurn{
+	0%{left:50%;top:50%;}
+	25%{left:300%;top:0%;}
+	50%{left:-310%;top:-100%;}
+	75%{left:-215%;top:-100%;}
+	100%{left:-120%;top:-100%;}
+}
+@-moz-keyframes bTurn{
+	0%{left:50%;top:50%;}
+	25%{left:300%;top:0%;}
+	50%{left:-310%;top:-100%;}
+	75%{left:-215%;top:-100%;}
+	100%{left:-120%;top:-100%;}
+}
+@-ms-keyframes bTurn{
+	0%{left:50%;top:50%;}
+	25%{left:300%;top:0%;}
+	50%{left:-310%;top:-100%;}
+	75%{left:-215%;top:-100%;}
+	100%{left:-120%;top:-100%;}
+}
+@-o-keyframes bTurn{
+	0%{left:50%;top:50%;}
+	25%{left:300%;top:0%;}
+	50%{left:-310%;top:-100%;}
+	75%{left:-215%;top:-100%;}
+	100%{left:-120%;top:-100%;}
+}
+.girlTurn{
+	animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	animation-timing-function: steps(1,start);
+	-webkit-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-webkit-animation-timing-function: steps(1,start);
+	-moz-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-moz-animation-timing-function: steps(1,start);
+	-ms-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-ms-animation-timing-function: steps(1,start);
+	-o-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-o-animation-timing-function: steps(1,start);
+}
+@keyframes gTurn{
+	0%{left:50%;top:50%;}
+	20%{left:-600%;top:0%;}
+	40%{left:4%;top:0%;}
+	60%{left:-193%;top:0%;}
+	80%{left:-290%;top:0%;}
+	100%{left:-390%;top:0%;}
+}
+@-webkit-keyframes gTurn{
+	0%{left:50%;top:50%;}
+	20%{left:-600%;top:0%;}
+	40%{left:4%;top:0%;}
+	60%{left:-193%;top:0%;}
+	80%{left:-290%;top:0%;}
+	100%{left:-390%;top:0%;}
+}
+@-moz-keyframes gTurn{
+	0%{left:50%;top:50%;}
+	20%{left:-600%;top:0%;}
+	40%{left:4%;top:0%;}
+	60%{left:-193%;top:0%;}
+	80%{left:-290%;top:0%;}
+	100%{left:-390%;top:0%;}
+}
+@-ms-keyframes gTurn{
+	0%{left:50%;top:50%;}
+	20%{left:-600%;top:0%;}
+	40%{left:4%;top:0%;}
+	60%{left:-193%;top:0%;}
+	80%{left:-290%;top:0%;}
+	100%{left:-390%;top:0%;}
+}
+@-o-keyframes gTurn{
+	0%{left:50%;top:50%;}
+	20%{left:-600%;top:0%;}
+	40%{left:4%;top:0%;}
+	60%{left:-193%;top:0%;}
+	80%{left:-290%;top:0%;}
+	100%{left:-390%;top:0%;}
+}
+
+/*花瓣*/
+.flower{
+	position: absolute;
+	z-index: 1000;
+	/*background-color: #eee;*/
+	/*opacity:0.6;*/
+	overflow: hidden;
+	/*border:1px solid red;*/
+}
+/*花瓣动画*/
+.flowerAni{
+	position: absolute;
+	opacity:0;
+	height:100%;
+	/*border:1px solid red;*/
+	animation-name: flowA;
+	animation-duration:20s;
+	-webkit-animation-name: flowA;
+	-webkit-animation-duration:20s;
+	-moz-animation-name: flowA;
+	-moz-animation-duration:20s;
+	-ms-animation-name: flowA;
+	-ms-animation-duration:20s;
+	-o-animation-name: flowA;
+	-o-animation-duration:20s;
+}
+@keyframes flowA {
+	0%{bottom: 100%;}
+	50%{
+		transform:rotate(1080deg);
+		-webkit-transform:rotate(1080deg);
+		-moz-transform:rotate(1080deg);
+		-ms-transform:rotate(1080deg);
+		-o-transform:rotate(1080deg);
+	}
+	100%{
+		transform:rotate(0deg) translate3d(30%,30%,30%);
+		-webkit-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-moz-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-ms-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-o-transform:rotate(0deg) translate3d(30%,30%,30%);
+	}
+}
+@-webkit-keyframes flowA {
+	0%{bottom: 100%;}
+	50%{
+		transform:rotate(1080deg);
+		-webkit-transform:rotate(1080deg);
+		-moz-transform:rotate(1080deg);
+		-ms-transform:rotate(1080deg);
+		-o-transform:rotate(1080deg);
+	}
+	100%{
+		transform:rotate(0deg) translate3d(30%,30%,30%);
+		-webkit-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-moz-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-ms-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-o-transform:rotate(0deg) translate3d(30%,30%,30%);
+	}
+}
+@-moz-keyframes flowA {
+	0%{bottom: 100%;}
+	50%{
+		transform:rotate(1080deg);
+		-webkit-transform:rotate(1080deg);
+		-moz-transform:rotate(1080deg);
+		-ms-transform:rotate(1080deg);
+		-o-transform:rotate(1080deg);
+	}
+	100%{
+		transform:rotate(0deg) translate3d(30%,30%,30%);
+		-webkit-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-moz-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-ms-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-o-transform:rotate(0deg) translate3d(30%,30%,30%);
+	}
+}
+@-ms-keyframes flowA {
+	0%{bottom: 100%;}
+	50%{
+		transform:rotate(1080deg);
+		-webkit-transform:rotate(1080deg);
+		-moz-transform:rotate(1080deg);
+		-ms-transform:rotate(1080deg);
+		-o-transform:rotate(1080deg);
+	}
+	100%{
+		transform:rotate(0deg) translate3d(30%,30%,30%);
+		-webkit-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-moz-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-ms-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-o-transform:rotate(0deg) translate3d(30%,30%,30%);
+	}
+}
+@-o-keyframes flowA {
+	0%{bottom: 100%;}
+	50%{
+		transform:rotate(1080deg);
+		-webkit-transform:rotate(1080deg);
+		-moz-transform:rotate(1080deg);
+		-ms-transform:rotate(1080deg);
+		-o-transform:rotate(1080deg);
+	}
+	100%{
+		transform:rotate(0deg) translate3d(30%,30%,30%);
+		-webkit-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-moz-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-ms-transform:rotate(0deg) translate3d(30%,30%,30%);
+		-o-transform:rotate(0deg) translate3d(30%,30%,30%);
+	}
+}
+/*-webkit-
+-moz-
+-ms-
+-o-*/
