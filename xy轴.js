@@ -186,7 +186,7 @@ function BoyWalk(){
     }
     //拿花
     function takeflower(){
-        $("#boy img").attr("src","../qixi/images/原图/person/boy-flower.png")
+        $("#boy img").attr("src","images/原图/person/boy-flower.png")
     }
     
     function outshop(){
@@ -216,10 +216,10 @@ function BoyWalk(){
     
     //商店灯
     function shoplight(){
-        $(".tback").attr("src","../qixi/images/QixiB-bright.png")
+        $(".tback").attr("src","images/QixiB-bright.png")
     }
     function dlight(){
-        $(".tback").attr("src","../qixi/images/QixiB-dark.png")
+        $(".tback").attr("src","images/QixiB-dark.png")
     }
     //减速走路
     function slowwalk(){
@@ -286,7 +286,7 @@ function BoyWalk(){
     }
     //送花、转身
     function turn(){
-        $("#boy img").attr("src","../qixi/images/boy.png")
+        $("#boy img").attr("src","images/boy.png")
         $("#boy img").css({
             'transform':'translate(-'+boyHeight*1.5+'px,0)',
             '-webkit-transform':'translate(-'+boyHeight*1.5+'px,0)',
@@ -311,12 +311,12 @@ function BoyWalk(){
     }
     //花瓣
 	var flowerURL = [
-	    '../qixi/images/snowflake/snowflake1.png',
-	    '../qixi/images/snowflake/snowflake2.png',
-	    '../qixi/images/snowflake/snowflake3.png',
-	    '../qixi/images/snowflake/snowflake4.png',
-	    '../qixi/images/snowflake/snowflake5.png',
-	    '../qixi/images/snowflake/snowflake6.png'
+	    'images/snowflake/snowflake1.png',
+	    'images/snowflake/snowflake2.png',
+	    'images/snowflake/snowflake3.png',
+	    'images/snowflake/snowflake4.png',
+	    'images/snowflake/snowflake5.png',
+	    'images/snowflake/snowflake6.png'
 	]
 
     function flowerL(){
@@ -376,8 +376,8 @@ function BoyWalk(){
     //背景音乐
     var audioConfig = {
         enable:true,//是否开启音乐
-        playURL:'../qixi/music/happy.wav',
-        cycleURL:'../qixi/music/circulation.wav'
+        playURL:'music/happy.wav',
+        cycleURL:'music/circulation.wav'
     }
 
     function Html5Audio(url,isloop){
@@ -488,18 +488,3 @@ function BoyWalk(){
         }      
      }   
 }
-
-$(".stop").on("click",function(){
-    var bleft = $("#boy").css("left")
-    $("#boy").removeClass('boywalk')
-    $("#boy img").css("animationPlayState","paused")
-    $("#boy").css("left",bleft)
-})
-// $(".stay").on("click",function(){
-//  $("#boy").toggleClass('boywalk')
-//  $("#boy img").css("animationPlayState","running")
-//  $("#boy").css("left",$("#screem").width()-$("#boy").width()*2+"px")
-// })
-    // $("#boy").addClass('boywalk')
-    // $("#boy").css("left",$("#screem").width()-$("#boy").width()*2+"px")
-    // $("#boy img").css("animationPlayState","running")
