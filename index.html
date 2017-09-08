@@ -15,7 +15,7 @@
 		<div class="flower"></div>
 		<ul class="scr_in">
 			<li>
-			     <img src="images/QixiA.png" alt="第一场景">
+				 <img src="images/QixiA.png" alt="第一场景">
 				<div class="cloud1">
 					<img src="images/cloud1.png" alt="云朵1">
 				</div>
@@ -82,8 +82,8 @@
 		</div>
 	</div>
 	<button class="start" style="float:right;margin:20% 10% 0 30%;position:absolute;">点击</button>
-	<button class="stop" style="float:right;margin:20% 10% 0 35%;position:absolute;z-index:1000000;">停止</button>
-	<button class="stay" style="float:right;margin:20% 10% 0 38%;position:absolute;z-index: 1010;">留</button>
+	<button class="stop" style="float:right;margin:20% 10% 0 40%;position:absolute;z-index:1000000;">停止</button>
+	<button class="stay" style="float:right;margin:20% 10% 0 50%;position:absolute;z-index: 1010;">留</button>
 	
 	<script type="text/javascript">
 		$(function(){   
@@ -97,63 +97,65 @@
 
 			$(".stay").on("click",function(){
 				boy.music()
-				boy.walkTo(5000,1.25)
+				boy.walkTo(2000,0.4)
 				.then(function(){
-					scrUl.scrollTo($(".scr_in").width()-$("#screem").width(),10000) 
-						return boy.walkTo(4800,1)
+					scrUl.scrollTo($(".scr_in").width()-$("#screem").width()*4,10000) 
+					setTimeout(function(){
+						boy.walkTo(3900,0.25)
+					},6000)
+				}).then(function(){
+					setTimeout(function(){
+						scrUl.scrollTo(-($(".scr_in").position().left),10)
+						boy.stopW()
+					},10000) 
+				}).then(function(){
+					setTimeout(function(){
+						boy.door()
+						boy.goshop()
+						boy.outshop()
+						boy.closedoor()
+					},10300)    
 				})
-// 				.then(function(){
-// 					return scrUl.scrollTo(-($(".scr_in").position().left),10) 
-// 				}).then(function(){
-// 					return boy.stopW()
-// 				}).then(function(){
-// 					return boy.door()
-// 				}).then(function(){
-// 					return boy.goshop()
-// 				}).then(function(){
-// 					return boy.outshop()
-// 				}).then(function(){
-// 					return boy.closedoor()
-// 				}).then(function(){
-// 					function backgo(){
-// 						scrUl.scrollTo($(".scr_in").width()-$("#screem").width(),5000)
-// 					}
-// 					setTimeout(backgo,6500)
-// 					function sw(){
-// 						return boy.swalk()
-// 					}
-// 					setTimeout(sw,7000)       
-// 				}).then(function(){
-// 					function upbrg(){
-// 						return boy.upbridge()
-// 					}
-// 					setTimeout(upbrg,11500) 
-// 				}).then(function(){
-// 					 function upbr(){
-// 						 return boy.walkTo(2000,1.195)
-// 					 }
-// 					 setTimeout(upbr,12500)
-// 				}).then(function(){
-// 					function upb(){ 
-// 						return boy.stopW()
-// 					}
-// 					setTimeout(upb,17500)
-// 				}).then(function(){                 
-// 					function ub(){                      
-// 						return boy.givef()
-// 					}
-// 					setTimeout(ub,17700)    
-// 				}).then(function(){
-// 					function ubt(){                      
-// 						return boy.Bturn()
-// 					}
-// 					setTimeout(ubt,19000)  
-// 				}).then(function(){
-// 					function ubF(){                      
-// 						return boy.flowerDown()
-// 					}
-// 					setTimeout(ubF,21000) 
-// 				})
+				.then(function(){
+					function backgo(){
+						scrUl.scrollTo($(".scr_in").width()-$("#screem").width()*1.7,10500)
+					}
+					setTimeout(backgo,17000)
+					function sw(){
+						return boy.swalk()
+					}
+					setTimeout(sw,20000)       
+				}).then(function(){
+					function upbrg(){
+						return boy.upbridge()
+					}
+					setTimeout(upbrg,25200) 
+				}).then(function(){
+					 function upbr(){
+						 return boy.walkTo(2000,0.39)
+					 }
+					 setTimeout(upbr,25500)
+				}).then(function(){
+					function upb(){ 
+						return boy.stopW()
+					}
+					setTimeout(upb,29500)
+				}).then(function(){                 
+					function ub(){                      
+						return boy.givef()
+					}
+					setTimeout(ub,29600)    
+				}).then(function(){
+					function ubt(){                      
+						return boy.Bturn()
+					}
+					setTimeout(ubt,31000)  
+				}).then(function(){
+				 function ubF(){                      
+					 return boy.flowerDown()
+				 }
+				 setTimeout(ubF,32300) 
+			 })
 			})
 		})
 	</script>
