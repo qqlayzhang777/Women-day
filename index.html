@@ -101,58 +101,59 @@
 				.then(function(){
 					scrUl.scrollTo($(".scr_in").width()-$("#screem").width(),10000) 
 						return boy.walkTo(4800,1)
-				}).then(function(){
-					return scrUl.scrollTo(-($(".scr_in").position().left),10) 
-				}).then(function(){
-					return boy.stopW()
-				}).then(function(){
-					return boy.door()
-				}).then(function(){
-					return boy.goshop()
-				}).then(function(){
-					return boy.outshop()
-				}).then(function(){
-					return boy.closedoor()
-				}).then(function(){
-					function backgo(){
-						scrUl.scrollTo($(".scr_in").width()-$("#screem").width(),5000)
-					}
-					setTimeout(backgo,6500)
-					function sw(){
-						return boy.swalk()
-					}
-					setTimeout(sw,7000)       
-				}).then(function(){
-					function upbrg(){
-						return boy.upbridge()
-					}
-					setTimeout(upbrg,11500) 
-				}).then(function(){
-					 function upbr(){
-						 return boy.walkTo(2000,1.195)
-					 }
-					 setTimeout(upbr,12500)
-				}).then(function(){
-					function upb(){ 
-						return boy.stopW()
-					}
-					setTimeout(upb,17500)
-				}).then(function(){                 
-					function ub(){                      
-						return boy.givef()
-					}
-					setTimeout(ub,17700)    
-				}).then(function(){
-					function ubt(){                      
-						return boy.Bturn()
-					}
-					setTimeout(ubt,19000)  
-				}).then(function(){
-					function ubF(){                      
-						return boy.flowerDown()
-					}
-					setTimeout(ubF,21000) 
 				})
+// 				.then(function(){
+// 					return scrUl.scrollTo(-($(".scr_in").position().left),10) 
+// 				}).then(function(){
+// 					return boy.stopW()
+// 				}).then(function(){
+// 					return boy.door()
+// 				}).then(function(){
+// 					return boy.goshop()
+// 				}).then(function(){
+// 					return boy.outshop()
+// 				}).then(function(){
+// 					return boy.closedoor()
+// 				}).then(function(){
+// 					function backgo(){
+// 						scrUl.scrollTo($(".scr_in").width()-$("#screem").width(),5000)
+// 					}
+// 					setTimeout(backgo,6500)
+// 					function sw(){
+// 						return boy.swalk()
+// 					}
+// 					setTimeout(sw,7000)       
+// 				}).then(function(){
+// 					function upbrg(){
+// 						return boy.upbridge()
+// 					}
+// 					setTimeout(upbrg,11500) 
+// 				}).then(function(){
+// 					 function upbr(){
+// 						 return boy.walkTo(2000,1.195)
+// 					 }
+// 					 setTimeout(upbr,12500)
+// 				}).then(function(){
+// 					function upb(){ 
+// 						return boy.stopW()
+// 					}
+// 					setTimeout(upb,17500)
+// 				}).then(function(){                 
+// 					function ub(){                      
+// 						return boy.givef()
+// 					}
+// 					setTimeout(ub,17700)    
+// 				}).then(function(){
+// 					function ubt(){                      
+// 						return boy.Bturn()
+// 					}
+// 					setTimeout(ubt,19000)  
+// 				}).then(function(){
+// 					function ubF(){                      
+// 						return boy.flowerDown()
+// 					}
+// 					setTimeout(ubF,21000) 
+// 				})
 			})
 		})
 	</script>
