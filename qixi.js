@@ -17,13 +17,13 @@ function Swipe(contents){
 
 	$("#boy").css({
 		top:height*0.53+"px",
-		left:"0px",
+		left:"-3%",
 		width:height*0.145+"px"
 	})
 	$("#boy img").css("height",height*0.28+"px")
 	$("#girl").css({
 		top:height*0.408+"px",
-		left:height*0.8+"px",
+		left:height*0.76+"px",
 		width:height*0.145+"px"
 	})
 	$("#girl img").css({
@@ -64,15 +64,15 @@ function Swipe(contents){
 	$(".water4 img").css("height",height*0.013+"px")
 	//星星
 	$(".star1").css({
-		left:height*0.31+"px",
+		left:height*0.54+"px",
 		top:height*0.15+"px"
 	})
 	$(".star2").css({
-		left:height*0.37+"px",
-		top:height*0.27+"px"
+		left:height*0.52+"px",
+		top:height*0.3+"px"
 	})
 	$(".star3").css({
-		left:height*0.48+"px",
+		left:height*0.57+"px",
 		top:height*0.19+"px"
 	})
 	$(".star4").css({
@@ -80,7 +80,7 @@ function Swipe(contents){
 		top:height*0.12+"px"
 	})
 	$(".star5").css({
-		left:height*1.33+"px",
+		left:height*1.06+"px",
 		top:height*0.27+"px"
 	})
 	$(".star6").css({
@@ -138,7 +138,7 @@ function Swipe(contents){
 	//第二页面门、灯、小鸟
 	$(".bird").css({
 		top:height*0.12+"px",
-		left:height*1.6+'px',
+		left:height*1.2+'px',
 		width:$(".bird img").height()*0.088+'px'
 	})
 	$(".bird img").css({
