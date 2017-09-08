@@ -383,6 +383,7 @@ function BoyWalk(){
 
 	function Html5Audio(url,isloop){
 		var audio = new Audio(url)
+		audio.preload = auto
 		audio.autoPlay = true
 		audio.loop = isloop || false
 		audio.play()
