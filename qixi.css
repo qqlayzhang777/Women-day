@@ -214,46 +214,46 @@ img{border:none;outline: none;}
 	z-index: 1;
 }
 .star1{
-	animation: star 3.5s ease-out 0s infinite alternate running;
-	-webkit-animation: star 3.5s ease-out 0s infinite alternate running;
-	-moz-animation: star 3.5s ease-out 0s infinite alternate running;
-	-ms-animation: star 3.5s ease-out 0s infinite alternate running;
-	-o-animation: star 3.5s ease-out 0s infinite alternate running;
+	animation: star 2.5s ease-out 0s infinite alternate running;
+	-webkit-animation: star 2.5s ease-out 0s infinite alternate running;
+	-moz-animation: star 2.5s ease-out 0s infinite alternate running;
+	-ms-animation: star 2.5s ease-out 0s infinite alternate running;
+	-o-animation: star 2.5s ease-out 0s infinite alternate running;
 }
 .star2{
-	animation: star 2.5s ease-out 1s infinite alternate running;
-	-webkit-animation: star 2.5s ease-out 1s infinite alternate running;
-	-moz-animation: star 2.5s ease-out 1s infinite alternate running;
-	-ms-animation: star 2.5s ease-out 1s infinite alternate running;
-	-o-animation: star 2.5s ease-out 1s infinite alternate running;
+	animation: star 2s ease-out 1s infinite alternate running;
+	-webkit-animation: star 2s ease-out 1s infinite alternate running;
+	-moz-animation: star 2s ease-out 1s infinite alternate running;
+	-ms-animation: star 2s ease-out 1s infinite alternate running;
+	-o-animation: star 2s ease-out 1s infinite alternate running;
 }
 .star3{
-	animation: star 4.3s ease-out 0.5s infinite alternate running;
-	-webkit-animation: star 4.3s ease-out 0.5s infinite alternate running;
-	-moz-animation: star 4.3s ease-out 0.5s infinite alternate running;
-	-ms-animation: star 4.3s ease-out 0.5s infinite alternate running;
-	-o-animation: star 4.3s ease-out 0.5s infinite alternate running;
-}
-.star4{
-	animation: star 2.6s ease-out 3s infinite alternate running;
-	-webkit-animation: star 2.6s ease-out 3s infinite alternate running;
-	-moz-animation: star 2.6s ease-out 3s infinite alternate running;
-	-ms-animation: star 2.6s ease-out 3s infinite alternate running;
-	-o-animation: star 2.6s ease-out 3s infinite alternate running;
-}
-.star5{
-	animation: star 5s ease-out 0s infinite alternate running;
-	-webkit-animation: star 5s ease-out 0s infinite alternate running;
-	-moz-animation: star 5s ease-out 0s infinite alternate running;
-	-ms-animation: star 5s ease-out 0s infinite alternate running;
-	-o-animation: star 5s ease-out 0s infinite alternate running;
-}
-.star6{
 	animation: star 3s ease-out 0.5s infinite alternate running;
 	-webkit-animation: star 3s ease-out 0.5s infinite alternate running;
 	-moz-animation: star 3s ease-out 0.5s infinite alternate running;
 	-ms-animation: star 3s ease-out 0.5s infinite alternate running;
 	-o-animation: star 3s ease-out 0.5s infinite alternate running;
+}
+.star4{
+	animation: star 2.2s ease-out 3s infinite alternate running;
+	-webkit-animation: star 2.2s ease-out 3s infinite alternate running;
+	-moz-animation: star 2.2s ease-out 3s infinite alternate running;
+	-ms-animation: star 2.2s ease-out 3s infinite alternate running;
+	-o-animation: star 2.2s ease-out 3s infinite alternate running;
+}
+.star5{
+	animation: star 3.3s ease-out 0s infinite alternate running;
+	-webkit-animation: star 3.3s ease-out 0s infinite alternate running;
+	-moz-animation: star 3.3s ease-out 0s infinite alternate running;
+	-ms-animation: star 3.3s ease-out 0s infinite alternate running;
+	-o-animation: star 3.3s ease-out 0s infinite alternate running;
+}
+.star6{
+	animation: star 2.6s ease-out 0.5s infinite alternate running;
+	-webkit-animation: star 2.6s ease-out 0.5s infinite alternate running;
+	-moz-animation: star 2.6s ease-out 0.5s infinite alternate running;
+	-ms-animation: star 2.6s ease-out 0.5s infinite alternate running;
+	-o-animation: star 2.6s ease-out 0.5s infinite alternate running;
 }
 @keyframes star {
 	0%{opacity:0.1;}
@@ -296,49 +296,49 @@ img{border:none;outline: none;}
 
 @keyframes bTurn{
 	0%{left:50%;top:50%;}
-	25%{left:300%;top:0%;}
-	50%{left:-310%;top:-100%;}
-	75%{left:-215%;top:-100%;}
-	100%{left:-120%;top:-100%;}
+	25%{left:200%;top:0%;}
+	50%{left:-410%;top:-100%;}
+	75%{left:-315%;top:-100%;}
+	100%{left:-212%;top:-100%;}
 }
 @-webkit-keyframes bTurn{
 	0%{left:50%;top:50%;}
-	25%{left:300%;top:0%;}
-	50%{left:-310%;top:-100%;}
-	75%{left:-215%;top:-100%;}
-	100%{left:-120%;top:-100%;}
+	25%{left:200%;top:0%;}
+	50%{left:-410%;top:-100%;}
+	75%{left:-315%;top:-100%;}
+	100%{left:-212%;top:-100%;}
 }
 @-moz-keyframes bTurn{
 	0%{left:50%;top:50%;}
-	25%{left:300%;top:0%;}
-	50%{left:-310%;top:-100%;}
-	75%{left:-215%;top:-100%;}
-	100%{left:-120%;top:-100%;}
+	25%{left:200%;top:0%;}
+	50%{left:-410%;top:-100%;}
+	75%{left:-315%;top:-100%;}
+	100%{left:-212%;top:-100%;}
 }
 @-ms-keyframes bTurn{
 	0%{left:50%;top:50%;}
-	25%{left:300%;top:0%;}
-	50%{left:-310%;top:-100%;}
-	75%{left:-215%;top:-100%;}
-	100%{left:-120%;top:-100%;}
+	25%{left:200%;top:0%;}
+	50%{left:-410%;top:-100%;}
+	75%{left:-315%;top:-100%;}
+	100%{left:-212%;top:-100%;}
 }
 @-o-keyframes bTurn{
 	0%{left:50%;top:50%;}
-	25%{left:300%;top:0%;}
-	50%{left:-310%;top:-100%;}
-	75%{left:-215%;top:-100%;}
-	100%{left:-120%;top:-100%;}
+	25%{left:200%;top:0%;}
+	50%{left:-410%;top:-100%;}
+	75%{left:-315%;top:-100%;}
+	100%{left:-212%;top:-100%;}
 }
 .girlTurn{
-	animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	animation: gTurn 0.6s linear 0s 1 normal running forwards;
 	animation-timing-function: steps(1,start);
-	-webkit-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-webkit-animation: gTurn 0.6s linear 0s 1 normal running forwards;
 	-webkit-animation-timing-function: steps(1,start);
-	-moz-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-moz-animation: gTurn 0.6s linear 0s 1 normal running forwards;
 	-moz-animation-timing-function: steps(1,start);
-	-ms-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-ms-animation: gTurn 0.6s linear 0s 1 normal running forwards;
 	-ms-animation-timing-function: steps(1,start);
-	-o-animation: gTurn 0.8s linear 0s 1 normal running forwards;
+	-o-animation: gTurn 0.6s linear 0s 1 normal running forwards;
 	-o-animation-timing-function: steps(1,start);
 }
 @keyframes gTurn{
